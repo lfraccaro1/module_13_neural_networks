@@ -1,1 +1,11 @@
-# module_13_neural_networks
+# Overview
+The instructions for this challenge involve preprocessing and preparing data for use on a neural network model using Pandas and scikit-learn's StandardScaler(). This includes reading the applicants_data.csv file into a Pandas DataFrame, dropping irrelevant columns, encoding categorical variables using OneHotEncoder, and creating features and target datasets. The features and target datasets are then split into training and testing sets, and the features data is scaled using scikit-learn's StandardScaler.
+
+The next step is to compile and evaluate a binary classification model using a neural network. This involves designing a deep neural network model using TensorFlow's Keras, which uses the dataset's features to predict whether an Alphabet Soup-funded startup will be successful. The model is then compiled and fit using the binary_crossentropy loss function, the adam optimizer, and the accuracy evaluation metric. The model is evaluated using the test data to determine its loss and accuracy.
+
+The final step is to design two new models by optimizing the original neural network model in order to improve its accuracy. I used techniques such as adjusting the number of layers and neurons, and experimenting with different activation functions and optimizers. 
+
+# Results
+The original model achieved a loss of 55% and an accuracy of 73%, indicating that it was moderately successful at predicting the success of Alphabet Soup-funded startups. Alternative model 1, which changed the number of hidden nodes in each layer, also achieved a loss of 55% and an accuracy of 73%. Alternative model 2, which added an extra layer and changed the number of hidden nodes, had a slightly higher loss of 58% but maintained the same accuracy of 73%. Overall, none of the alternative models were able to improve upon the performance of the original model.
+
+In my testing I also played around with changing activation in the output layer and different numbers of hidden layers, but was unsuccesful in improving performance of the original.
